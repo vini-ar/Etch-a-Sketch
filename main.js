@@ -13,8 +13,20 @@ function spanDiv() {
     }
 }
 
-function changeDivColor() {
-
+function changeGridSize() {
+    let gridSize = prompt("Type the number of squares per side for the new grid:")
+    
+    removeOldSquares()
+    
+    for (let i = 0; gridSize < i; i++) {
+        let square = document.createElement("div")
+    }
 }
 
+function removeOldSquares() {
+    let squaresNodeList = document.querySelectorAll(".square")
+    squaresNodeList.forEach(function(square) {
+        square.remove()
+    })
+}
 spanDiv()
